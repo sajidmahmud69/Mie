@@ -16,7 +16,7 @@ const Sidebar = () => {
 
     console.log (session)
   return (
-      <div className='text-gray-500 p-5 text-sm border-r border-gray-900'>
+      <div className='text-gray-500 p-5 text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen'>
           <div className='space-y-4'>
               {/* by default flex puts everything into rows but in react native it puts into columns */}
               {/* h-5 indicates height 5 and w-5 indicates width 5 */}
