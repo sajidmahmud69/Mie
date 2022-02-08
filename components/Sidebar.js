@@ -8,7 +8,7 @@ import {
     RssIcon,
     LogoutIcon
 } from '@heroicons/react/outline'
-import { signOut, useSession } from 'next-auth/react';
+import { useSession } from 'next-auth/react';
 import useSpotify from '../hooks/useSpotify'
 import { useRecoilState } from 'recoil';
 import { playlistIdState } from '../atoms/playlistAtom'
@@ -40,14 +40,7 @@ const Sidebar = () => {
                     <HomeIcon className = "h-5 w-5"/>
                     <p>Home</p>
                 </button>
-                <button 
-                    className='flex items-center space-x-2 hover:text-white'
-                    onClick={() => signOut ()}
-                >
-                    {/* h-5 indicates height 5 and w-5 indicates width 5 */}
-                    <LogoutIcon className = "h-5 w-5"/>
-                    <p>Log Out</p>
-                </button>
+                
                 <button className='flex items-center space-x-2 hover:text-white'>
                     <SearchIcon className = "h-5 w-5"/>
                     <p>Search</p>
