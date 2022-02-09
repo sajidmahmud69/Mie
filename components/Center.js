@@ -42,7 +42,6 @@ const Center = () => {
             .catch (error => console.log (`Something went wrong! ${error}`))
     }, [spotifyApi, playlistId])
 
-    console.log (playlist)
 
     return (
         <div className='flex-grow h-screen overflow-y-scroll scrollbar-hide'>
